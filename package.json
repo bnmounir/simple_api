@@ -1,0 +1,16 @@
+{
+    "name": "basic_API",
+    "version": "1.0.0",
+    "description": "api for testing using json server and ngrok",
+    "main": "index.js",
+    "author": "Mounir B",
+    "license": "MIT",
+    "dependencies": {
+        "json-server": "^0.16.1",
+        "ngrok": "^3.2.7"
+    },
+    "scripts": {
+        "db": "json-server -w db.json -p 3876",
+        "tunnel": "ngrok http 3876"
+    }
+}
